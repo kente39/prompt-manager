@@ -92,10 +92,10 @@ def show_by_category():              # 역할: 고른 장르에 해당하는 책
 
 
 def search_prompt():                 # 역할: 키워드가 제목/저자에 든 책을 찾아 출력
-    keyword = input_non_empty("검색어: ")
+    keyword = input_non_empty("검색어: ").lower()
     found = False
     for i, b in enumerate(books, 1):
-        if keyword in b["title"] or keyword in b["author"]:
+        if keyword in b["title"].lower() or keyword in b["author"].lower():
             print(f"{i}. [{b['genre']}] {b['title']} - {b['author']}")
             found = True
     if not found:
