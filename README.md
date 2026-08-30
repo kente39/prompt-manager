@@ -136,3 +136,25 @@ genres = ["소설", "에세이", "자기계발", "SF", "만화", "미스터리"]
 - Python 3.10 이상 (실행 시 `sys.version_info`로 자동 확인)
 - 외부 라이브러리 없음(표준 기능만 사용)
 - Git / GitHub 사용
+
+## 제출 증거 (Git 작업 스크린샷)
+
+과제 요구사항 중 명령 실행·이력을 증명하는 터미널 캡처입니다. 모두 코드스페이스에서 실제로 실행한 화면입니다.
+
+### 1. Git 환경 설정 확인
+
+`git --version`, `python --version`, `git config user.name`, `git config user.email` 출력입니다.
+
+![Git 환경 설정](docs/evidence-01-git-config.png)
+
+### 2. 저장소 clone 확인
+
+본 저장소를 `git clone`으로 내려받고, `ls`로 파일 구조를, `git log --oneline`으로 커밋 이력을 확인한 화면입니다.
+
+![저장소 clone](docs/evidence-02-clone.png)
+
+### 3. 브랜치 생성·병합 이력
+
+`git log --oneline --graph --all`로 본 브랜치 병합 그래프입니다. `feature/search-count` 브랜치를 `--no-ff`로 병합하여 병합 커밋이 남아 있습니다.
+
+![브랜치 병합 그래프](docs/evidence-03-branch-merge.png)
